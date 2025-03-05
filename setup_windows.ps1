@@ -11,8 +11,8 @@ Invoke-WebRequest -Uri "https://code.visualstudio.com/sha/download?build=stable&
 Start-Process -FilePath "vscode_installer.exe" -ArgumentList "/silent" -Wait
 Remove-Item "vscode_installer.exe"
 
-# Install Extensions for Visual Studio Code
-Write-Output "Installing Recommended Extensions for Visual Studio Code..."
+# Install MATLAB Extension for Visual Studio Code
+Write-Output "Installing MATLAB Extension for Visual Studio Code..."
 $env:Path += ";$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin"
 code --install-extension MathWorks.language-matlab ms-python.python ms-toolsai.jupyter
 
