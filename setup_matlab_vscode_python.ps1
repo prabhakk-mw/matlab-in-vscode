@@ -74,9 +74,9 @@ $settings = @"
 {
     "python.defaultInterpreterPath": "$env:ProgramFiles\Python$pyVerInstallPostFix\\python",
     "MATLAB.signIn": true,
-    "jupyter.logKernelOutputSeparately": true,
-    "python.condaPath": "C:\\Users\\$env:USERNAME\\Anaconda3\\Scripts\\conda.exe",
-    "python.pythonPath": "C:\\Users\\$env:USERNAME\\Anaconda3\\python.exe"
+    "MATLAB.matlabConnectionTiming": "onStart",
+    "MATLAB.installPath": "$matlabInstallDir",
+    "jupyter.logKernelOutputSeparately": true
 }
 "@
 
